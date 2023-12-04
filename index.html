@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Inclure jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<!-- Inclure Fancybox après jQuery -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <!--
@@ -15,6 +22,8 @@ https://templatemo.com/tm-506-tinker
         <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
         
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
 
         <link rel="stylesheet" href="css/bootstrap.min.css">
         <link rel="stylesheet" href="css/bootstrap-theme.min.css">
@@ -23,7 +32,8 @@ https://templatemo.com/tm-506-tinker
         <link rel="stylesheet" href="css/owl-carousel.css">
         <link rel="stylesheet" href="css/templatemo-style.css">
         <link rel="stylesheet" href="css/lightbox.css">
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
 
@@ -46,9 +56,9 @@ https://templatemo.com/tm-506-tinker
                         <li><a href="#" class="scroll-top">Accueil </a></li>
                         <li><a href="#" class="scroll-link" data-id="about">à propos de moi </a></li>
                         <li><a href="#" class="scroll-link" data-id="portfolio">Mes projets </a></li>
-                        <li><a href="#" class="scroll-link" data-id="blog">mes compétences </a></li>
+                       <!-- <li><a href="#" class="scroll-link" data-id="blog">mes compétences </a></li>-->
                         <li><a href="#" class="scroll-link" data-id="veille">Ma veille technologie </a></li>
-                        <li><a href="#" class="scroll-link" data-id="contact-us">Me suivre </a></li>
+                       < <li><a href="#" class="scroll-link" data-id="contact-us">Me contacter</a></li>
                     </ul>
                 </div>
                 <!--/.navbar-collapse-->
@@ -81,9 +91,11 @@ https://templatemo.com/tm-506-tinker
                         <div class="icon">
                             <img src="img/service_icon_04.png" alt="">
                         </div>
-                        <h4></h4>
+                        <h4>Parcours scolaire :</h4>
                         <div class="line-dec"></div>
-                        <p></p>
+                        <p>-2nde : otion ICN, dev web et python</p>
+                        <p>-1ère et Term STI2D : option SIN
+                        <p>BTS SIO - option SLAM
 
                     </div>
                 </div>
@@ -94,7 +106,9 @@ https://templatemo.com/tm-506-tinker
                         </div>
                         <h4>Mes passions</h4>
                         <div class="line-dec"></div>
-                        <p></p>
+                        <p>Lire et écrire</p>
+                        <p>Jeux vidéos</p>
+                        <p>Japanimation</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
@@ -102,10 +116,13 @@ https://templatemo.com/tm-506-tinker
                         <div class="icon">
                             <img src="img/service_icon_03.png" alt="">
                         </div>
-                        <h4></h4>
+                        <h4>Mes qualités</h4>
                         <div class="line-dec"></div>
-                        <p></p>
-
+                        <p>Curieux et motivé, 
+                          je souhaite élargir mes compétences en développement Web</p>
+                        <p> Esprit d’équipe, souriant</p>
+                        <p> Créatif</p>
+                        <p> Persévérant</p>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-6 col-xs-12">
@@ -113,13 +130,22 @@ https://templatemo.com/tm-506-tinker
                         <div class="icon">
                             <img src="img/service_icon_01.png" alt="">
                         </div>
-                        <h4>Contact</h4>
+                        <h4>Compétences:</h4>
                         <div class="line-dec"></div>
-                        <p></p>
+                        <p>Dev.Web :
+                            HTML, CSS, PHP</br>
+                            en apprentissage : JavaScript, Framework Laravel</p>
+                        <p>Base de donné : SQL (MySQL), modélisation UML</p>
+                        <p>Développement Java</p>
+                        <p>débutant en chinois</p>
 
                     </div>
                 </div>
-                                        <div class="primary-blue-button">
+                </div>
+            </br>
+            </br>
+            </br>
+                                            <div class="primary-blue-button">
                             <a href="#" class="scroll-link" data-id="portfolio">Continue Reading</a>
                         </div>
             </div>
@@ -150,6 +176,55 @@ https://templatemo.com/tm-506-tinker
                         <div class="projects-holder-3">
                             <div class="projects-holder">
                                 <div class="row">
+<div class="col-md-6 col-sm-6 project-item mix branding">
+    <div class="thumb">   
+        <div class="image">
+            <a href="kayak.html" data-fancybox data-type="iframe">
+                <img src="img/portfolio_item_03.png">
+            </a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+                                    <script>
+    $(document).ready(function() {
+        $('[data-fancybox]').fancybox({
+            type: 'iframe' // Indique que le contenu est une iframe
+        });
+    });
+
+</script>
+
+
+<div class="col-md-6 col-sm-6 project-item mix graphic">
+    <div class="thumb">   
+        <div class="image">
+            <a href="#project-details2" data-fancybox>
+                <img src="img/portfolio_item_04.jpg">
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Contenu personnalisé caché -->
+<div id="project-details2" style="display: none;">
+    <h2>LaFleur</h2>
+    <p>Projet de boutique en ligne de fleur fait en HTML/CSS avec une base de données MySQL. Le site inclus un formulaire d'inscription et de connexion avec aussi une gestion de panier pour les commandes</p>
+    <!-- Ajoutez d'autres informations ici -->
+</div>
+
+
+
+
+
+
+
+
                                     <div class="col-md-6 col-sm-6 project-item mix nature">
                                       <div class="thumb">
                                             <div class="image">
@@ -157,41 +232,31 @@ https://templatemo.com/tm-506-tinker
                                             </div>
                                       </div>
                                     </div>
-                                    <div class="col-md-6 col-sm-6 project-item mix animation">
-                                      <div class="thumb">
-                                        <div class="image">
-                                                <a href="img/portfolio_big_item_02.jpg" data-lightbox="image-1"><img src="img/portfolio_item_02.jpg"></a>
-                                            </div>
-                                      </div>
+
+<div class="col-md-6 col-sm-6 project-item mix animation">
+    <div class="thumb">   
+        <div class="image">
+            <a href="#project-details" data-fancybox>
+                <img src="img/portfolio_item_02.jpg">
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- Contenu personnalisé caché -->
+<div id="project-details" style="display: none;">
+    <h2>Applisfrais</h2>
+    <p>Projet en PHP qui permet aux visiteurs de renseigner et consulter leurs fiches de frais et aux comptables de les valider.</br>
+     <a class="contact-title" href="https://galactique23.github.io/Portfolio/personal-portfolio/assets/doc/Preuve%20projet%20AppliFrais.pdf">Preuves</a>        </p>
+    <!-- Ajoutez d'autres informations ici -->
+</div>
+
+
+
+
+
                                     </div>
-                                    <div class="col-md-6 col-sm-6 project-item mix branding">
-                                      <div class="thumb">
-                                            <div class="image">
-                                                <a href="img/portfolio_big_item_03.jpg" data-lightbox="image-1"><img src="img/portfolio_item_03.jpg"></a>
-                                            </div>
-                                      </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-6 project-item mix graphic nature">
-                                        <div class="thumb">
-                                            <div class="image">
-                                                <a href="img/portfolio_big_item_04.jpg" data-lightbox="image-1"><img src="img/portfolio_item_04.jpg"></a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-6 project-item mix branding">
-                                      <div class="thumb">
-                                            <div class="image">
-                                                <a href="img/portfolio_big_item_05.jpg" data-lightbox="image-1"><img src="img/portfolio_item_05.jpg"></a>
-                                            </div>
-                                      </div>
-                                    </div>
-                                    <div class="col-md-6 col-sm-6 project-item mix graphic animation">
-                                        <div class="thumb">
-                                            <div class="image">
-                                                <a href="img/portfolio_big_item_06.jpg" data-lightbox="image-1"><img src="img/portfolio_item_06.jpg"></a>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -201,7 +266,7 @@ https://templatemo.com/tm-506-tinker
         </div> 
     </section>
 
-
+ <!--
     <section id="testimonial">
         <div class="container">
             <div class="row">
@@ -238,58 +303,132 @@ https://templatemo.com/tm-506-tinker
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
-    <div class="tabs-content" id="blog">
+    <div class="tabs-content" id="veille">
         <div class="container">
             <div class="row">
                 <div class="wrapper">
                     <div class="col-md-4">
                         <div class="section-heading">
-                            <h4>Our Blog Posts</h4>
+                            <h4>Ma veille technologique</h4>
                             <div class="line-dec"></div>
-                            <p>Nam vulputate elementum nulla, sit amet congue ipsum malesuada pretium. Vivamus vel gravida quam.</p>
-                            <ul class="tabs clearfix" data-tabgroup="first-tab-group">
-                                <li><a href="#tab1" class="active">Nulla eget convallis augue</a></li>
-                                <li><a href="#tab2">Quisque ultricies maximus</a></li>
-                                <li><a href="#tab3">Sed vel elit et lorem</a></li>
-                                <li><a href="#tab4">Vivamus purus neque</a></li>
+                            <p>Dans l'effervescente sphère du développement web, rester à l'affût des évolutions technologiques est impératif. Notre veille cible les dernières avancées, des frameworks émergents aux pratiques de déploiement novatrices. Explorez avec nous les rouages en perpétuel mouvement du développement web, où chaque découverte représente une opportunité de perfectionner nos compétences et d'adopter les outils qui redéfiniront la manière dont nous construisons le web de demain.</p>
+   <ul class="tabs clearfix" data-tabgroup="first-tab-group">
+                                <li><a href="#tab1" class="active">Langages de Programmation Backend :</a></li>
+                                <li><a href="#tab2">Frameworks Backend :</a></li>
+                                <li><a href="#tab3">Bases de Données :</a></li>
+                                <li><a href="#tab4">Sécurité Backend :</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="col-md-8">
                         <section id="first-tab-group" class="tabgroup">
                             <div id="tab1">
-                                <img src="img/blog_item_01.jpg" alt="">
+                                
                                 <div class="text-content">
-                                    <h4>Nulla eget convallis augue</h4>
-                                    <span><a href="#">Digital Marketing</a> / <a href="#">Honey</a> / <a href="#">21 September 2020</a></span>
-                                    <p>Donec interdum scelerisque auctor. Nulla id lorem auctor, bibendum lectus elementum, porta felis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+                                    <h4>Langages de Programmation Backend :</h4>
+<h4>PHP :</h4>
+<p>PHP est un langage de script côté serveur qui excelle dans le traitement des demandes web. Voici quelques aspects clés :</p>
+<p><strong>Interprété et Dynamique :</strong> PHP est interprété à la volée, offrant une grande flexibilité. Il est également dynamique, adapté au développement agile.</p>
+<p><strong>Intégration HTML :</strong> PHP peut être intégré directement dans le code HTML, facilitant la création de pages web dynamiques.</p>
+<p><strong>Framework Laravel :</strong> Laravel, construit en PHP, propose une architecture élégante, une gestion des migrations, et une intégration poussée de l'ORM Eloquent.</p>
+<p><strong>WampServer avec PHP :</strong> WampServer intègre PHP en tant que module, fournissant un environnement complet et facile à configurer.</p>
+<h4>JavaScript (Node.js) :</h4>
+<p>Node.js permet d'exécuter du code JavaScript côté serveur, offrant plusieurs avantages :</p>
+<p><strong>Asynchronisme :</strong> Node.js utilise un modèle asynchrone, permettant une gestion efficace des opérations non bloquantes, ce qui est particulièrement utile pour les applications en temps réel.</p>
+<p><strong>Événements :</strong> Le modèle d'événements de Node.js facilite la gestion des événements côté serveur.</p>
+<p><strong>Express.js :</strong> Un framework minimaliste pour construire des applications web et des APIs robustes avec Node.js.</p>
                                 </div>
                             </div>
                             <div id="tab2">
-                                <img src="img/blog_item_02.jpg" alt="">
+                    
                                 <div class="text-content">
-                                    <h4>Quisque ultricies maximus</h4>
-                                    <span><a href="#">Branding</a> / <a href="#">David</a> / <a href="#">24 August 2020</a></span>
-                                    <p>Etiam fringilla posuere pretium. Maecenas tempor pellentesque elit in dapibus. Curabitur viverra urna sem, ut sollicitudin sem congue vel. Donec fringilla augue in justo molestie fermentum quis ac mi.</p>
+                                    <h4>Frameworks Backend :</h4>
+                             
+
+    <h4>Laravel (PHP)</h4>
+    <p>Laravel est un framework PHP moderne et populaire qui offre une multitude de fonctionnalités pour le développement web.</p>
+
+    <h4>Composer</h4>
+    <p>Laravel utilise Composer pour gérer les dépendances, facilitant l'intégration de bibliothèques tierces.</p>
+
+    <h4>Eloquent ORM</h4>
+    <p>Avec Eloquent, les développeurs peuvent interagir avec la base de données en utilisant des objets PHP au lieu de requêtes SQL, améliorant la lisibilité du code.</p>
+
+    <h4>Middleware</h4>
+    <p>Les middlewares permettent de filtrer les requêtes HTTP à différentes étapes, ajoutant des couches de traitement personnalisées.</p>
+
+    <h4>Blade Templating Engine</h4>
+    <p>Blade simplifie la gestion des vues et offre une syntaxe concise pour l'écriture de templates.</p>
                                 </div>
                             </div>
                             <div id="tab3">
-                                <img src="img/blog_item_03.jpg" alt="">
+                            
                                 <div class="text-content">
-                                    <h4>Sed vel elit et lorem</h4>
-                                    <span><a href="#">Web Design</a> / <a href="#">William</a> / <a href="#">18 July 2020</a></span>
-                                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce id ipsum porta, dictum sem sed, bibendum quam. Maecenas mattis risus eget orci rhoncus.</p>
+                                    <h4>Bases de Données :</h4>
+<h4>MySQL</h4>
+    <p>MySQL, en tant que système de gestion de base de données relationnelle, s'intègre bien avec WampServer et PHP.</p>
+
+    <h4>Administration avec phpMyAdmin</h4>
+    <p>WampServer inclut phpMyAdmin, une interface web conviviale pour administrer les bases de données MySQL.</p>
+
+    <h4>Langage SQL</h4>
+    <p>MySQL utilise SQL (Structured Query Language) pour les requêtes, ce qui facilite l'interaction avec la base de données.</p>
+
+    <h4>Gestion des Index</h4>
+    <p>Les index peuvent être utilisés pour améliorer les performances des requêtes en accélérant la recherche dans les tables.</p>
+
+    <h4>Transactions ACID</h4>
+    <p>MySQL assure la cohérence des données grâce à la prise en charge des transactions ACID (Atomicité, Cohérence, Isolation, Durabilité).</p>
+
+    <h4>MongoDB</h4>
+    <p>MongoDB est une base de données NoSQL orientée document qui offre des avantages tels que :</p>
+
+    <h4>Structure flexible</h4>
+    <p>Stockage de données sous forme de documents JSON BSON.</p>
+
+    <h4>Évolutivité horizontale</h4>
+    <p>Possibilité de faire évoluer horizontalement la base de données en ajoutant des serveurs.</p>
+
+    <h4>Mongoose (Node.js)</h4>
+    <p>Un ORM pour MongoDB, facilitant l'interaction avec la base de données.</p>
                                 </div>
                             </div>
                             <div id="tab4">
-                                <img src="img/blog_item_04.jpg" alt="">
+                             
                                 <div class="text-content">
-                                    <h4>Vivamus purus neque</h4>
-                                    <span><a href="#">E-Commerce</a> / <a href="#">George</a> / <a href="#">14 July 2020</a></span>
-                                    <p>Aliquam erat volutpat. Nulla at nunc nec ante rutrum congue id in diam. Nulla at lectus non turpis placerat volutpat lacinia ut mi. Quisque ultricies maximus justo a blandit. Donec sit amet commodo arcu. Sed sit amet iaculis mi, vel fermentum nisi. Morbi dui enim, vestibulum non accumsan ac, tempor non nisl.</p>
-                                </div>
+                                    <h4>Sécurité Backend :</h4>
+                                    <h4>Principes de Sécurité PHP</h4>
+    <p>Assurer la sécurité dans le développement PHP nécessite une approche proactive et complète.</p>
+
+    <h4>Validation des Entrées</h4>
+    <p>Filtrer et valider toutes les entrées utilisateur pour éviter les attaques par injection de code. Utiliser des fonctions comme htmlspecialchars pour échapper les caractères spéciaux.</p>
+
+    <h4>Authentification et Autorisation</h4>
+    <p>Implémenter des mécanismes d'authentification robustes et définir des règles d'autorisation appropriées pour protéger les ressources sensibles.</p>
+
+    <h4>Gestion des Dépendances</h4>
+    <p>Utiliser npm audit pour identifier et résoudre les vulnérabilités dans les dépendances.</p>
+
+    <h4>Gestion des Mots de Passe</h4>
+    <p>Stocker les mots de passe de manière sécurisée en utilisant des fonctions de hachage comme password_hash et password_verify.</p>
+
+    <h4>Middleware de Sécurité</h4>
+    <p>Utiliser des middlewares tels que Helmet pour sécuriser les en-têtes HTTP et csurf pour prévenir les attaques CSRF.</p>
+
+    <h4>Authentification avec Passport.js</h4>
+    <p>Passport.js facilite l'implémentation de l'authentification.</p>
+
+    <h4>Cryptographie avec bcrypt</h4>
+    <p>Utiliser bcrypt pour hacher les mots de passe de manière sécurisée.</p>
+
+    <h4>Sécurité des Sessions</h4>
+    <p>Utiliser des mécanismes sécurisés pour gérer les sessions, tels que l'utilisation de jetons CSRF et la transmission sécurisée des cookies.</p>
+
+    <h4>Mises à Jour Régulières</h4>
+    <p>Garder le serveur Wamp, PHP, Laravel, MySQL, et toutes les dépendances à jour pour bénéficier des correctifs de sécurité.</p>
+
                             </div>
                         </section>
                     </div>
@@ -303,101 +442,47 @@ https://templatemo.com/tm-506-tinker
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-heading">
-                        <h4>Contact Us</h4>
-                        <div class="line-dec"></div>
-                        <p>Nunc posuere non quam at pharetra. Mauris tincidunt purus vel ultrices malesuada. Integer euismod erat ut nulla ultrices, ut auctor eros feugiat.</p>
-                        <div class="pop-button">
-                            <h4>Send us a message</h4>
-                        </div>
+                        <h4>Me contacter</h4>
+
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3">
-                    <div class="pop">
-                        <span>✖</span>
-                        <form id="contact" action="#" method="post">
-                            <div class="row">
-                                <div class="col-md-12">
-                                  <fieldset>
-                                    <input name="name" type="text" class="form-control" id="name" placeholder="Your name..." required="">
-                                  </fieldset>
-                                </div>
-                                <div class="col-md-12">
-                                  <fieldset>
-                                    <input name="email" type="email" class="form-control" id="email" placeholder="Your email..." required="">
-                                  </fieldset>
-                                </div>
-                                <div class="col-md-12">
-                                  <fieldset>
-                                    <textarea name="message" rows="6" class="form-control" id="message" placeholder="Your message..." required=""></textarea>
-                                  </fieldset>
-                                </div>
-                                <div class="col-md-12">
-                                  <fieldset>
-                                    <button type="submit" id="form-submit" class="btn">Send Message</button>
-                                  </fieldset>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div id="map">
-    	<!-- How to change your own map point
-            1. Go to Google Maps
-            2. Click on your location point
-            3. Click "Share" and choose "Embed map" tab
-            4. Copy only URL and paste it within the src="" field below
-        -->
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7895.485196115994!2d103.85995441789784!3d1.2880401763270322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7fb4e58ad9cd826e!2sSingapore+Flyer!5e0!3m2!1sen!2sth!4v1505825620371" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
-    </div>
-
-    <footer>
+                <footer>
         <div class="container">
             <div class="row">
                 <div class="col-md-4 col-sm-12">
                     <div class="logo">
-                        <a class="logo-ft scroll-top" href="#"><em>T</em>inker</a>
-                        <p>Copyright &copy; 2020 Your Company 
-                       <br>Design: TemplateMo</p>
-                    </div>
+                        <a class="logo-ft scroll-top" href="#"><em>L</em>ycée Saint Sauveur</a>
+                        <p>BTS SIO 2- option SLAM
+                                          </div>
                 </div>
                 <div class="col-md-4 col-sm-12">
                     <div class="location">
-                        <h4>Location</h4>
+                        <h4>ADRESSE</h4>
                         <ul>
-                            <li>46 Raffles Ave, <br>Singapore 039803</li>
-                            <li>12 Republic Blvd, <br>Singapore 038975</li>
+                            <li>1 rue du Plessis, <br>35600, Redon</li>
+                            
                         </ul>
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-12">
                     <div class="contact-info">
-                        <h4>More Info</h4>
+                        <h4>CONTACT</h4>
                         <ul>
-                            <li><em>Phone</em>: 040-040-0440</li>
-                            <li><em>Email</em>: tk@company.co</li>
+                            <li><em>Phone</em>: 07 77 25 86 29</li>
+                            <li><em>Email</em>: noerenier351@gmail.com</li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-2 col-sm-12">
-                    <div class="connect-us">
-                        <h4>Get Social with us</h4>
-                        <ul>
-                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-google"></i></a></li>
-                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
-                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
+               
             </div>
         </div>
+        </div>
+    </div>
+
+
+
+
     </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
